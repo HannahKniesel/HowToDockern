@@ -4,10 +4,14 @@
 Clone the repository and setup the correct folder structure.
 ```bash
 git clone https://github.com/HannahKniesel/HowToDockern.git
-cd HowToDockern/workspace
-mkdir data
-mkdir output
+
+cd HowToDockern
+mkdir workspace/data
+mkdir workspace/output
 ```
+
+Add you wandb API key to the `.env` file in the `workspace` directory.
+
 
 Build the docker image 
 ```bash
@@ -37,3 +41,4 @@ Then you can submit it as follows:
 ```bash
 submit ./startscript.sh --name <name> --custom <user-name>/<image-name>:<version>
 ```
+
