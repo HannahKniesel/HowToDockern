@@ -64,6 +64,9 @@ The `ADD` instruction copies new files, directories or remote file URLs from `<s
 [`COPY`](https://docs.docker.com/engine/reference/builder/#copy)
 The `COPY` instruction copies new files or directories from `<src>` and adds them to the filesystem of the container at the path `<dest>` (such as `COPY <src>,... <dest>`)
 
+
+!Note that you need to define the CUDA ARCH flags if you wish to compile something for cuda within the docker. Here is a list for CUDA ARCH: https://en.wikipedia.org/wiki/CUDA 
+
 ## Develop with docker
 
 ### Make your own *Dockerfile*
